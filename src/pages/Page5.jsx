@@ -4,15 +4,17 @@ import ContainerStory from "../components/ContainerStory";
 import image from "../assets/image2.png";
 import Title from "../components/Title";
 import ImageCarousel from "../components/ImageCarousel";
+import video from "../assets/video.mp4";
+import img1 from "../assets/photos/img1.png";
+import img2 from "../assets/photos/img2.png";
+import img3 from "../assets/photos/img3.png";
+import img4 from "../assets/photos/img4.png";
+import img5 from "../assets/photos/img5.png";
+import img6 from "../assets/photos/img6.png";
 
 export default function Page5(){
     const images =[
-        './src/assets/photos/img1.png', 
-        './src/assets/photos/img2.png',
-        './src/assets/photos/img3.png',
-        './src/assets/photos/img4.png',
-        './src/assets/photos/img5.png',
-        './src/assets/photos/img6.png',
+        img1, img2, img3, img4, img5, img6
     ];
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,7 +56,7 @@ export default function Page5(){
                 </div>
                 <div className="my-16">
                 <video className="w-full" muted controls autoPlay loop>
-                    <source src="./src/assets/video.mp4" type="video/mp4" />
+                    <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                     <div className="flex flex-wrap my-10 justify-center">
