@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Background from "./components/background";
+import Background from "./components/Background";
 import Cover from "./components/Cover";
 import Navbar from "./components/Navbar";
 import Page1 from "./pages/Page1";
