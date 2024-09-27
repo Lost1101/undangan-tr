@@ -7,12 +7,12 @@ import ImageCarousel from "../components/ImageCarousel";
 
 export default function Page5(){
     const images =[
-        '/src/assets/photos/img1.png', 
-        '/src/assets/photos/img2.png',
-        '/src/assets/photos/img3.png',
-        '/src/assets/photos/img4.png',
-        '/src/assets/photos/img5.png',
-        '/src/assets/photos/img6.png',
+        './src/assets/photos/img1.png', 
+        './src/assets/photos/img2.png',
+        './src/assets/photos/img3.png',
+        './src/assets/photos/img4.png',
+        './src/assets/photos/img5.png',
+        './src/assets/photos/img6.png',
     ];
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,7 +54,7 @@ export default function Page5(){
                 </div>
                 <div className="my-16">
                 <video className="w-full" muted controls autoPlay loop>
-                    <source src="/src/assets/video.mp4" type="video/mp4" />
+                    <source src="./src/assets/video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                     <div className="flex flex-wrap my-10 justify-center">
