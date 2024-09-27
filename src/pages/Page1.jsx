@@ -1,6 +1,6 @@
 import border from '../assets/Border.png';
 import logo from '../assets/Logo.png';
-import Title from '../components/title';
+import Title from '../components/Title';
 import { FaAngleDoubleUp } from "react-icons/fa";
 
 export default function Page1(){

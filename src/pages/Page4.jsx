@@ -4,7 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { CiLocationArrow1 } from "react-icons/ci";
 import Button from "../components/Button";
 import ring from "../assets/ring.png"
-import Title from "../components/title";
+import Title from "../components/Title";
 
 export default function Page4(){
     return(

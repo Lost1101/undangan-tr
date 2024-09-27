@@ -2,7 +2,7 @@ import { useState } from "react";
 import ContainerWSquare from "../components/Container-w-square";
 import ContainerStory from "../components/ContainerStory";
 import image from "../assets/image2.png";
-import Title from "../components/title";
+import Title from "../components/Title";
 import ImageCarousel from "../components/ImageCarousel";
 
 export default function Page5(){

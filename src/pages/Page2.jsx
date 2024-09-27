@@ -2,7 +2,7 @@ import ContainerFade from '../components/Container-fade';
 import bismillah from '../assets/bismillah.svg';
 import pembatas from '../assets/pembatas3.png'
 import bride from '../assets/bride.png'
-import Title from '../components/title';
+import Title from '../components/Title';
 import ContainerWArch from '../components/Container-w-arch';
 import ContainerBG from '../components/Container-BG';
 

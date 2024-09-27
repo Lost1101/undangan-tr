@@ -1,5 +1,5 @@
 import Cdown from "../components/Countdown";
-import Title from "../components/title";
+import Title from "../components/Title";
 import border from '../assets/Border.png';
 import pembatas from '../assets/pembatas2w.png'
 
