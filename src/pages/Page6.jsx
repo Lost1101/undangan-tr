@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PiGiftThin } from "react-icons/pi";
 import ContainerWSquare from "../components/Container-w-square";
 import Title from "../components/title";
-import Button from "../components/button";
+import Button from "../components/Button";
 import gift from "../assets/gift.png";
 import ModalGift from "../components/ModalGift";
 import { FaRegCopy } from "react-icons/fa6";

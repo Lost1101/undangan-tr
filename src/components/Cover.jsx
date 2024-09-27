@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Logo from '../assets/Logo.png';
-import Button from './button';
+import Button from './Button';
 import Flower from '../assets/Flower.png'
 import { IoMdMail } from "react-icons/io";
 import PropTypes from 'prop-types';

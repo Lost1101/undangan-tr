@@ -5,7 +5,7 @@ import { ImGift } from "react-icons/im";
 import { FaArrowsUpDownLeftRight } from "react-icons/fa6";
 import { FaVolumeHigh } from "react-icons/fa6";
 import klajik from "../assets/klajik.jpeg";
-import Button from "./button";
+import Button from "./Button";
 
 export default function Navbar(){  
     return(

@@ -2,7 +2,7 @@ import ContainerFade from "../components/Container-fade";
 import ContainerWArch from "../components/Container-w-arch";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiLocationArrow1 } from "react-icons/ci";
-import Button from "../components/button";
+import Button from "../components/Button";
 import ring from "../assets/ring.png"
 import Title from "../components/title";
 
