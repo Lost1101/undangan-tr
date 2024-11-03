@@ -33,28 +33,30 @@ export default function Page6(){
 
     return(
         <div id="gift" className="min-h-screen">
-            <div className="p-5">
-                <ContainerWSquare>
+            <div className="p-5 laptop:w-3/5 laptop:m-auto desktop:mt-52">
+                <ContainerWSquare animation={'duration-1000 opacity-100'}>
                     <Title content={'Hadiah Digital'} color={'undangan-400'}/>
-                    <div className="my-5 text-xs text-center">
+                    <div className="my-5 text-xs text-center laptop:text-base">
                         <img src={gift} alt="" className="w-1/2 m-auto"/>
                         <p className="mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, eum veniam. Similique ipsa voluptatum nisi, neque magni provident suscipit quas officiis consequatur minima mollitia, illum nam praesentium. Maxime, doloremque impedit!</p>
-                        <Button onClick={handleModal} icon={<PiGiftThin/>} content={'Klik disini'} morestyle={'bg-undangan-400 text-undangan-100 m-auto mt-5'}/>
+                        <Button onClick={handleModal} icon={<PiGiftThin/>} content={'Klik disini'} morestyle={'bg-undangan-400 text-undangan-100 m-auto mt-5 hover:bg-undangan-300'}/>
                     </div>
                 </ContainerWSquare>
                 {show && 
                     <ModalGift setshow={setshow}>
-                        <div className="text-center my-5">
-                            <h1 className="font-bold text-lg">A.N. Klajiknyanya</h1>
-                            <img src="https://dummyimage.com/400x400/000/fff" alt="" className="w-1/2 m-auto"/>
-                            <p>No. 101010100110</p>
-                            <Button onClick={() => handleCopy('101010100110')} icon={<FaRegCopy />} content={'Copy'} morestyle={'border border-black m-auto mt-5'}/>
-                        </div>
-                        <div className="text-center my-5">
-                            <h1 className="font-bold text-lg">A.N. Klajiknyanya</h1>
-                            <img src="https://dummyimage.com/400x400/000/fff" alt="" className="w-1/2 m-auto"/>
-                            <p>No. 101010100110</p>
-                            <Button icon={<FaRegCopy />} content={'Copy'} morestyle={'border border-black m-auto mt-5'}/>
+                        <div className="laptop:flex laptop:m-auto laptop:w-fit">
+                            <div className="text-center my-5">
+                                <h1 className="font-bold text-lg">A.N. Klajiknyanya</h1>
+                                <img src="https://dummyimage.com/400x400/000/fff" alt="" className="w-1/2 m-auto"/>
+                                <p>No. 101010100110</p>
+                                <Button onClick={() => handleCopy('101010100110')} icon={<FaRegCopy />} content={'Copy'} morestyle={'border border-black m-auto mt-5 hover:bg-undangan-200'}/>
+                            </div>
+                            <div className="text-center my-5">
+                                <h1 className="font-bold text-lg">A.N. Klajiknyanya</h1>
+                                <img src="https://dummyimage.com/400x400/000/fff" alt="" className="w-1/2 m-auto"/>
+                                <p>No. 101010100110</p>
+                                <Button icon={<FaRegCopy />} content={'Copy'} morestyle={'border border-black m-auto mt-5 hover:bg-undangan-200'}/>
+                            </div>
                         </div>
                     </ModalGift>
                 }

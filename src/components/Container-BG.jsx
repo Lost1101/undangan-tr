@@ -9,14 +9,14 @@ export default function ContainerBG({image, name, childth, parent1, parent2, ins
                 <BGPhoto path={image}/>
             </div>
             <div className='mt-5'>
-                <span className='block text-xl'>{name}</span>
-                <div className='text-xs mt-3'>
+                <span className='block text-xl laptop:text-3xl desktop:text-4xl'>{name}</span>
+                <div className='text-xs mt-3 laptop:text-base desktop:text-xl'>
                     <span className='block'>{childth}</span>
                     <span className='block'>{parent1}</span>
                     <span className='block'>{parent2}</span>
                 </div>
             </div>
-            <div className='mt-5 text-sm'>
+            <div className='mt-5 text-sm laptop:text-base desktop:text-xl'>
                 <a href={insta} className='underline'><FaInstagram className='m-auto inline-block'/>@Klajiknyanya</a>
             </div>
         </div>
