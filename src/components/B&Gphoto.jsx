@@ -12,8 +12,8 @@ export default function BGPhoto({ path }) {
     }, [path.length]);
 
     return (
-        <div className='block m-auto w-full py-10'>
-            <div className="relative w-72 h-72 top-0"> {/* Set the container as relative */}
+        <div className='block m-auto w-full py-0 laptop:py-10'>
+            <div className="relative w-80 h-72 laptop:w-72 laptop:h-72 top-0">
             {path.map((image, index) => (
                 <img
                     key={index}
