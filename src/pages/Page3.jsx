@@ -1,10 +1,35 @@
 import Cdown from "../components/Countdown";
 import Title from "../components/Title";
 import border from '../assets/Border.png';
-import pembatas from '../assets/pembatas2w.png'
+import pembatas from '../assets/pembatas2w.png';
+import { useRef, useEffect, useState } from 'react';
 
 export default function Page3(){
     const targetDate = new Date('2024-12-14T00:00:00');
+    const [isVisible, setIsVisible] = useState(false);
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+            }
+        };
+    }, []);
 
     return(
         <div id="date" className="text-undangan-100 min-h-screen py-20 laptop:w-2/3 laptop:m-auto">
@@ -12,14 +37,16 @@ export default function Page3(){
                 <img src={border} alt="" className='m-auto w-1/2 laptop:w-2/5'/>
                 <div className="my-10 w-3/4 m-auto">
                     <Title subcontent={'Hitung Mundur'} content={'Hari Bahagia'} color={'undangan-100'}/>
-                    <div className="text-center text-sm my-5 laptop:text-lg">
-                        <p>Sabtu, 14 Desember 2024</p>
-                    </div>
-                    <div className="my-10 w-2/3 m-auto full text-3xl">
-                        <Cdown targetDate={targetDate}/>
-                    </div>
-                    <div className="text-center text-xs laptop:text-base">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a excepturi voluptates, dolore explicabo doloribus assumenda accusamus. Adipisci labore, tempore fuga mollitia, sint voluptatibus dolorem voluptatem repudiandae qui voluptas aut?</p>
+                    <div ref={containerRef} className={`${ isVisible ? 'animate-fadeinfast' : 'opacity-0'}`}>
+                        <div className="text-center text-sm my-5 laptop:text-lg">
+                            <p>Sabtu, 14 Desember 2024</p>
+                        </div>
+                        <div className="my-10 w-2/3 m-auto full text-3xl">
+                            <Cdown targetDate={targetDate}/>
+                        </div>
+                        <div className="text-center text-xs laptop:text-base">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a excepturi voluptates, dolore explicabo doloribus assumenda accusamus. Adipisci labore, tempore fuga mollitia, sint voluptatibus dolorem voluptatem repudiandae qui voluptas aut?</p>
+                        </div>
                     </div>
                     <img src={pembatas} alt="" className="w-1/3 m-auto mt-7 laptop:w-1/5"/>
                 </div>

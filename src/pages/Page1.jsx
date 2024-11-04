@@ -14,9 +14,11 @@ export default function Page1(){
                             <p className='laptop:text-lg desktop:text-3xl'>14.12.2024</p>
                         </div>
                     <img src={border} alt="" className='m-auto w-1/2 rotate-180'/>
-                    <div className='animate-bounce py-32 laptop:text-lg desktop:text-2xl'>
-                        <p>Swipe Up</p>
-                        <FaAngleDoubleUp className='m-auto'/>
+                    <div className='animate-bounce w-fit m-auto py-32 laptop:text-lg desktop:text-2xl'>
+                        <a href="#prayer">
+                            <p>Swipe Up</p>
+                            <FaAngleDoubleUp className='m-auto'/>
+                        </a>
                     </div>
                 </div>
             </div>

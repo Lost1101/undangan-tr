@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundSize: {
+        '50': '50%',
+        '75': '75%',
+        '90': '90%',
+      },
       fontFamily: {
         tangerine : ['Tangerine', 'cursive'],
         playwrite : ['Playwrite DE Grund', 'cursive'],
@@ -57,8 +62,10 @@ export default {
       animation: {
         fade : 'fade 1s ease-out forwards',
         fadein: 'fadein 5s ease-out forwards',
+        fadeinfast: 'fadein 1s ease-out forwards',
         flower: 'flower 3s ease-in-out infinite',
         fadeInTop: 'fadeInTop 1s ease-out forwards',
+        fadeInTopLong: 'fadeInTop 1.5s ease-out forwards',
         fadeInLeft: 'fadeInLeft 1s ease-out forwards',
         fadeInRight: 'fadeInRight 1s ease-out forwards',
       }

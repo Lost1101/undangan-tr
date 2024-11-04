@@ -8,6 +8,7 @@ import Groom1 from '../assets/profile1.jpg';
 import Groom2 from '../assets/profile3.jpg';
 import Bride1 from '../assets/profile2.jpg';
 import Bride2 from '../assets/profile4.jpg';
+import { useRef, useEffect, useState } from 'react';
 
 export default function Page2(){
     const Groom = [
@@ -17,6 +18,31 @@ export default function Page2(){
     const Bride = [
         Bride1, Bride2
     ];
+
+    const [isVisible, setIsVisible] = useState(false);
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+            }
+        };
+    }, []);
 
     return(
         <div className="min-h-screen" id='prayer'>
@@ -34,7 +60,7 @@ export default function Page2(){
                 </ContainerWArch>
                 <div className='my-20 laptop:w-1/2 m-auto'>
                     <Title subcontent={'Pasangan'} colorsub={'undangan-100'} content={'Mempelai'} color={'undangan-100'}/>
-                    <div className='text-white mt-10'>
+                    <div ref={containerRef} className={`text-white mt-10 ${ isVisible ? 'animate-fadeinfast' : 'opacity-0'}`}>
                         <p className='text-xs text-center laptop:text-base desktop:text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, corrupti non saepe asperiores officiis amet beatae architecto odio at, cupiditate molestiae pariatur voluptatem consequatur id consequuntur, nobis animi vitae temporibus.</p>
                         <div className='mt-10 laptop:flex laptop:justify-between'>
                             <ContainerBG image={Bride} name={'Tiya Fathonah S.Pd'} childth={'Putri dari'} parent1={'Bpk. Agus Suryana, BE &'} parent2={'Ibu Enung Noorwasliyah, S.E'} insta={'https://www.w3.org/Provider/Style/dummy.html'}/>
