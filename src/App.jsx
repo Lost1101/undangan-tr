@@ -17,7 +17,7 @@ function App() {
       <Background>
         <Cover trigger={setVisible}/>
         <div className={`${visible? 'animate-fadein' : ''}`}>
-          <Navbar/>
+          <Navbar visible={visible}/>
           <Page1/>
           <Page2/>
           <Page3/>

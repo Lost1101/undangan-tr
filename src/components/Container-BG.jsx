@@ -8,7 +8,7 @@ export default function ContainerBG({image, name, childth, parent1, parent2, ins
             <div className='w-fit m-auto'>
                 <BGPhoto path={image}/>
             </div>
-            <div className='mt-2 laptop:mt-5'>
+            <div className='mt-5'>
                 <span className='block text-xl laptop:text-3xl desktop:text-4xl'>{name}</span>
                 <div className='text-xs mt-3 laptop:text-base desktop:text-xl'>
                     <span className='block'>{childth}</span>

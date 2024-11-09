@@ -19,9 +19,10 @@ export default function BGPhoto({ path }) {
                     key={index}
                     src={image}
                     alt={`carousel-image-${index}`}
-                    className={`absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 rounded-t-full laptop:w-4/5 desktop:w-3/4 transition-opacity duration-1000 ${
+                    className={`absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 laptop:w-4/5 desktop:w-3/4 transition-opacity duration-1000 ${
                         index === currentIndex ? 'opacity-100' : 'opacity-0'
                     }`}
+                    style={{ borderRadius: '1000px 1000px 10px 10px' }}
                 />
             ))}
             </div>

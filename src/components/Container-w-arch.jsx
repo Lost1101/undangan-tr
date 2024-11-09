@@ -33,6 +33,7 @@ export default function ContainerWArch({ children }) {
             className={`rounded-t-full bg-undangan-100 p-5 shadow-xl transition-opacity overflow-hidden laptop:w-1/3 laptop:m-auto desktop:w-1/3 desktop:p-7 ${
                 isVisible ? 'animate-fadeInTop' : 'opacity-0'
             }`}
+            style={{ borderRadius: '1000px 1000px 10px 10px' }}
         >
             <div className='border rounded-t-full border-dashed border-undangan-300 p-5 pt-20 laptop:border-2'>
                 {children}

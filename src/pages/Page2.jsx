@@ -61,7 +61,7 @@ export default function Page2(){
                 <div className='my-20 laptop:w-1/2 m-auto'>
                     <Title subcontent={'Pasangan'} colorsub={'undangan-100'} content={'Mempelai'} color={'undangan-100'}/>
                     <div ref={containerRef} className={`text-white mt-10 ${ isVisible ? 'animate-fadeinfast' : 'opacity-0'}`}>
-                        <p className='text-xs text-center laptop:text-base desktop:text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, corrupti non saepe asperiores officiis amet beatae architecto odio at, cupiditate molestiae pariatur voluptatem consequatur id consequuntur, nobis animi vitae temporibus.</p>
+                        <p className='text-xs text-center laptop:text-base desktop:text-xl'>Di bawah langit yang sama, kami dipertemukan. Bersama kami melangkah dengan penuh harap dan doa, menyatukan hati dan impian untuk masa depan yang indah.</p>
                         <div className='mt-10 laptop:flex laptop:justify-between'>
                             <ContainerBG image={Bride} name={'Tiya Fathonah S.Pd'} childth={'Putri dari'} parent1={'Bpk. Agus Suryana, BE &'} parent2={'Ibu Enung Noorwasliyah, S.E'} insta={'https://www.w3.org/Provider/Style/dummy.html'}/>
                             <span className='block text-4xl text-center text-white my-10 laptop:mt-28 laptop:text-6xl desktop:mt-40'>&</span>

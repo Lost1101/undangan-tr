@@ -29,7 +29,7 @@ export default function Title({subcontent, content, colorsub, color}){
 
     return(
         <div>
-            <h1 ref={containerRef} className={`font-nanumgoth block text-center text-sm text-${colorsub} laptop:text-base desktop:text-2xl transition-opacity ${
+            <h1 ref={containerRef} className={`font-aboreto block text-center text-sm text-${colorsub} laptop:text-base desktop:text-2xl transition-opacity ${
                 isVisible ? 'animate-fadeInTop' : 'opacity-0'
             }`}>{subcontent}</h1>
             <h1 ref={containerRef} className={`block text-center text-4xl text-${color} laptop:text-4xl desktop:text-5xl transition-opacity ${

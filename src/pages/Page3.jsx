@@ -45,7 +45,7 @@ export default function Page3(){
                             <Cdown targetDate={targetDate}/>
                         </div>
                         <div className="text-center text-xs laptop:text-base">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a excepturi voluptates, dolore explicabo doloribus assumenda accusamus. Adipisci labore, tempore fuga mollitia, sint voluptatibus dolorem voluptatem repudiandae qui voluptas aut?</p>
+                            <p>Dengan penuh kebahagiaan, kami mengundang Anda untuk bersama-sama menyaksikan momen istimewa kami. Ayo hitung mundur bersama menuju hari penuh cinta dan kebahagiaan ini, karena kami ingin berbagi kebahagiaan ini dengan Anda.</p>
                         </div>
                     </div>
                     <img src={pembatas} alt="" className="w-1/3 m-auto mt-7 laptop:w-1/5"/>

@@ -16,6 +16,9 @@ export default {
         playwrite : ['Playwrite DE Grund', 'cursive'],
         pwdisplay : ['Playfair Display', 'serif'],
         nanumgoth : ['Nanum Gothic', 'sans-serif'],
+        aboreto : ['Aboreto', 'system-ui'],
+        arapey : ['Arapey', 'serif'],
+        worksans : ['Work Sans', 'sans-serif'],
       },
       screens: {
         'phone': '480px',

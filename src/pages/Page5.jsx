@@ -33,31 +33,31 @@ export default function Page5(){
                 <div className="my-10">
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
-                            <ContainerStory image={image} title={'Lorem Ipsum'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'11.11.11—'} morestyle={'text-right laptop:text-center'}/>
+                            <ContainerStory image={image} title={'Kali Pertama Bertemu'} text={''} date={'2003 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
-                            <ContainerStory image={image} title={'Lorem Ipsum'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'—11.11.11'} morestyle={'text-left laptop:text-center'}/>
+                            <ContainerStory image={image} title={'Kesempatan Itu Hadir'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'— 2023'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
-                            <ContainerStory image={image} title={'Lorem Ipsum'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'11.11.11—'} morestyle={'text-right laptop:text-center'}/>
+                            <ContainerStory image={image} title={'Menerima dan Terikat'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'2024 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
-                            <ContainerStory image={image} title={'Lorem Ipsum'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'—11.11.11'} morestyle={'text-left laptop:text-center'}/>
+                            <ContainerStory image={image} title={'Searah dalam Melangkah'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'— 2024'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
             </div>
             <div>
                 <div className="text-undangan-100 text-center">
-                    <p className="text-xs laptop:text-base desktop:text-xl">&#34;Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero soluta accusamus voluptate tempora repellat maiores aut quas numquam ea repudiandae dolorem amet exercitationem dolore architecto consectetur, id totam dolorum! &#34;</p>
+                    <p className="text-xs laptop:text-base desktop:text-xl">Menikah bukan soal cepat atau lambat. Namun, siapa yang siap mengemban amanah yang besar. Kami berharap kebahagiaan ini dapat menjadi awal dari cerita yang lebih indah, penuh cinta dan doa.</p>
                 </div>
                 <div className="my-16">
-                <video className="w-full" muted controls autoPlay loop>
+                <video className="w-full rounded-lg" muted controls autoPlay loop>
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

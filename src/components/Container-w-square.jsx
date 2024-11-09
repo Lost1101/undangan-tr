@@ -28,7 +28,7 @@ export default function ContainerWSquare({children, animation}){
     }, []);
 
     return(
-        <div ref={containerRef} className={`bg-undangan-100 p-5 shadow-xl transition-opacity overflow-hidden ${
+        <div ref={containerRef} className={`bg-undangan-100 rounded-lg p-5 shadow-xl transition-opacity overflow-hidden ${
             isVisible ? animation : 'opacity-0'
         }`}>
             <div className='border border-dashed border-undangan-300 p-5 laptop:border-2'>
