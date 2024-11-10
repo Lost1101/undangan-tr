@@ -25,7 +25,6 @@ export default function Cover({trigger}){
 
     return(
         <div className={`w-full h-full fixed z-20 top-0 left-0 font-pwdisplay text-undangan-100 bg-cover text-sm ${class1? 'animate-fade' : ''} ${class2? 'hidden' : 'block'} laptop:bg-50`} style={{ backgroundImage: `url(${BgCover})` }}>
-            <div></div>
             <div className="fixed top-0 left-0 w-full h-screen opacity-75 z-0 bg-undangan-500"></div>
             <div className="w-fit m-auto p-12 relative top-36 laptop:p-16 laptop:mt-7 desktop:mt-32 desktop:p-28">
                 <div className='text-center text-sm laptop:text-xl desktop:text-3xl'>
