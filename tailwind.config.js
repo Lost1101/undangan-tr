@@ -45,9 +45,9 @@ export default {
           '100%': { opacity: '1'}
         },
         flower: {
-          '0%': { transform: 'rotate(15deg) scale(1)' },
-          '50%': { transform: 'rotate(0deg) scale(1.1)' },
-          '100%': { transform: 'rotate(15deg) scale(1)' },
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+          '100%': { transform: 'scale(1)' },
         },
         fadeInTop: {
           '0%': {opacity: '0', transform: 'translateY(-200px)'},

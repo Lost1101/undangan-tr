@@ -63,9 +63,9 @@ export default function Page2(){
                     <div ref={containerRef} className={`text-white mt-10 ${ isVisible ? 'animate-fadeinfast' : 'opacity-0'}`}>
                         <p className='text-xs text-center laptop:text-base desktop:text-xl'>Di bawah langit yang sama, kami dipertemukan. Bersama kami melangkah dengan penuh harap dan doa, menyatukan hati dan impian untuk masa depan yang indah.</p>
                         <div className='mt-10 laptop:flex laptop:justify-between'>
-                            <ContainerBG image={Bride} name={'Tiya Fathonah S.Pd'} childth={'Putri dari'} parent1={'Bpk. Agus Suryana, BE &'} parent2={'Ibu Enung Noorwasliyah, S.E'} insta={'https://www.w3.org/Provider/Style/dummy.html'}/>
+                            <ContainerBG image={Bride} name={'Tiya Fathonah S.Pd'} childth={'Putri dari'} parent1={'Bpk. Agus Suryana, BE &'} parent2={'Ibu Enung Noorwasliyah, S.E'} uname={'tiyafathonah'} insta={'https://www.instagram.com/tiyafathonah/'}/>
                             <span className='block text-4xl text-center text-white my-10 laptop:mt-28 laptop:text-6xl desktop:mt-40'>&</span>
-                            <ContainerBG image={Groom} name={'drh. Rizal Gusdinar'} childth={'Putra dari'} parent1={'Bpk. H. Sutardi, S.Pd &'} parent2={'Ibu Hj. Nani, S.Pd'} insta={'https://www.w3.org/Provider/Style/dummy.html'}/>
+                            <ContainerBG image={Groom} name={'drh. Rizal Gusdinar'} childth={'Putra dari'} parent1={'Bpk. H. Sutardi, S.Pd &'} parent2={'Ibu Hj. Nani, S.Pd'} uname={'rizalgusdinar'} insta={'https://www.instagram.com/rizalgusdinar/'}/>
                         </div>
                     </div>
                 </div>

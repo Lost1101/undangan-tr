@@ -7,7 +7,7 @@ import { MdFullscreen, MdFullscreenExit } from "react-icons/md";
 import { FaVolumeHigh, FaVolumeXmark } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
 import { useState, useEffect, useRef } from "react";
-import Sound from './audio.mp3';
+import Sound from '../assets/audio.mp3';
 
 export default function Navbar({visible}){ 
     const [isFullscreen, setIsFullscreen] = useState(false);
@@ -71,7 +71,7 @@ export default function Navbar({visible}){
         <div>
             <div>
                 <button className={"fixed z-10 top-5 right-2 bg-white rounded-full px-0 w-10 h-10 desktop:w-20 desktop:h-20"} onClick={toggleFullscreen}><span className='mt-1 mr-2'>{isFullscreen ? <MdFullscreenExit className="text-2xl my-2 mx-2 desktop:text-5xl desktop:my-4 desktop:mx-4"/> : <MdFullscreen className="text-2xl my-2 mx-2 desktop:text-5xl desktop:my-4 desktop:mx-4"/>}</span></button>
-                <button className={"fixed z-10 top-20 right-2 bg-white rounded-full px-0 w-10 h-10 desktop:w-20 desktop:h-20 desktop:top-32"} onClick={toggleMusic}><span className='mt-1 mr-2'>{isMusicOn ? <FaVolumeHigh className="my-3 mx-3 desktop:text-5xl desktop:my-4 desktop:mx-4"/> : <FaVolumeXmark className="my-3 mx-3 desktop:text-5xl desktop:my-4 desktop:mx-4"/>}</span></button>
+                <button className={`fixed z-10 top-20 right-2 bg-white rounded-full px-0 w-10 h-10 desktop:w-20 desktop:h-20 desktop:top-32 ${isMusicOn ? 'animate-flower' : ''}`} onClick={toggleMusic}><span className='mt-1 mr-2'>{isMusicOn ? <FaVolumeHigh className="my-3 mx-3 desktop:text-5xl desktop:my-4 desktop:mx-4"/> : <FaVolumeXmark className="my-3 mx-3 desktop:text-5xl desktop:my-4 desktop:mx-4"/>}</span></button>
             </div>
             <div className="fixed z-10 bottom-0 left-0 right-0 flex justify-center">
                 <div className="bg-white w-full p-3 rounded-t-xl laptop:w-2/3">

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import BGPhoto from './B&Gphoto';
 import { FaInstagram } from "react-icons/fa";
 
-export default function ContainerBG({image, name, childth, parent1, parent2, insta}){
+export default function ContainerBG({image, name, childth, parent1, parent2, insta, uname}){
     return(
         <div className='text-white text-center'>
             <div className='w-fit m-auto'>
@@ -17,7 +17,7 @@ export default function ContainerBG({image, name, childth, parent1, parent2, ins
                 </div>
             </div>
             <div className='mt-5 text-sm laptop:text-base desktop:text-xl'>
-                <a href={insta} className='underline'><FaInstagram className='m-auto inline-block'/>@Klajiknyanya</a>
+                <a href={insta} className='underline'><FaInstagram className='m-auto inline-block'/>@{uname}</a>
             </div>
         </div>
     )
@@ -29,5 +29,6 @@ ContainerBG.propTypes={
     childth: PropTypes.string,
     parent1: PropTypes.string,
     parent2: PropTypes.string,
-    insta: PropTypes.string
+    insta: PropTypes.string,
+    uname: PropTypes.string
 }

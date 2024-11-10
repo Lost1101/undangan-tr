@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ContainerWSquare from "../components/Container-w-square";
 import ContainerStory from "../components/ContainerStory";
-import image from "../assets/image2.png";
 import Title from "../components/Title";
 import ImageCarousel from "../components/ImageCarousel";
 import video from "../assets/video.mp4";
@@ -13,6 +12,10 @@ import img5 from "../assets/photos/img5.jpg";
 import img6 from "../assets/photos/img6.jpg";
 import img7 from "../assets/photos/img7.jpg";
 import img8 from "../assets/photos/img8.jpg";
+import story1 from "../assets/story1.jpg";
+import story2 from "../assets/story2.jpg";
+import story3 from "../assets/story3.png";
+import story4 from "../assets/story4.png";
 
 export default function Page5(){
     const images =[
@@ -33,22 +36,22 @@ export default function Page5(){
                 <div className="my-10">
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
-                            <ContainerStory image={image} title={'Kali Pertama Bertemu'} text={''} date={'2003 —'} morestyle={'text-right laptop:text-center'}/>
+                            <ContainerStory image={story1} title={'Kali Pertama Bertemu'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'2003 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
-                            <ContainerStory image={image} title={'Kesempatan Itu Hadir'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'— 2023'} morestyle={'text-left laptop:text-center'}/>
+                            <ContainerStory image={story2} title={'Kesempatan Itu Hadir'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'— 2023'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
-                            <ContainerStory image={image} title={'Menerima dan Terikat'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'2024 —'} morestyle={'text-right laptop:text-center'}/>
+                            <ContainerStory image={story3} title={'Menerima dan Terikat'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'2024 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
-                            <ContainerStory image={image} title={'Searah dalam Melangkah'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'— 2024'} morestyle={'text-left laptop:text-center'}/>
+                            <ContainerStory image={story4} title={'Searah dalam Melangkah'} text={'Lorem ipsum dolor sit, amet, consectetur elit.'} date={'— 2024'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
             </div>
