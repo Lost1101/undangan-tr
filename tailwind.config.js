@@ -12,13 +12,8 @@ export default {
         '90': '90%',
       },
       fontFamily: {
-        tangerine : ['Tangerine', 'cursive'],
-        playwrite : ['Playwrite DE Grund', 'cursive'],
         pwdisplay : ['Playfair Display', 'serif'],
-        nanumgoth : ['Nanum Gothic', 'sans-serif'],
         aboreto : ['Aboreto', 'system-ui'],
-        arapey : ['Arapey', 'serif'],
-        worksans : ['Work Sans', 'sans-serif'],
       },
       screens: {
         'phone': '480px',
