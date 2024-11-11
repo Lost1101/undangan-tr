@@ -29,6 +29,8 @@ export default function Navbar({visible}){
     useEffect(() => {
         // Buat objek audio hanya sekali
         audioRef.current = new Audio(Sound);
+        audioRef.current.loop = true;
+        
         return () => {
             // Bersihkan audio saat komponen di-unmount
             audioRef.current.pause();
