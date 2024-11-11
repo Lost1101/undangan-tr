@@ -36,22 +36,22 @@ export default function Page5(){
                 <div className="my-10">
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
-                            <ContainerStory image={story1} title={'Kali Pertama Bertemu'} date={'2003 —'} morestyle={'text-right laptop:text-center'}/>
+                            <ContainerStory image={story1} title={'Perkenalan'} date={'2003 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
-                            <ContainerStory image={story2} title={'Kesempatan Itu Hadir'} date={'— 2023'} morestyle={'text-left laptop:text-center'}/>
+                            <ContainerStory image={story2} title={'Bertemu Kembali'} date={'— 2023'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
-                            <ContainerStory image={story3} title={'Menerima dan Terikat'} date={'2024 —'} morestyle={'text-right laptop:text-center'}/>
+                            <ContainerStory image={story3} title={'Berkomitmen'} date={'2023 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
-                            <ContainerStory image={story4} title={'Searah dalam Melangkah'} date={'— 2024'} morestyle={'text-left laptop:text-center'}/>
+                            <ContainerStory image={story4} title={'Satu Tuju'} date={'— 2024'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
             </div>
