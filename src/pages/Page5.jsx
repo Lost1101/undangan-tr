@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import '../addCSS/swiper.css';
+import { Autoplay } from 'swiper/modules';
 import ContainerWSquare from "../components/Container-w-square";
 import ContainerStory from "../components/ContainerStory";
 import Title from "../components/Title";
-import ImageCarousel from "../components/ImageCarousel";
-import video from "../assets/video.mp4";
 import img1 from "../assets/photos/img1.jpg";
 import img2 from "../assets/photos/img2.jpg";
 import img3 from "../assets/photos/img3.jpg";
@@ -31,9 +34,9 @@ export default function Page5(){
     };
 
     return(
-        <div id="story" className="min-h-screen my-28 p-5 laptop:w-1/2 m-auto">
+        <div id="story" className="min-h-screen my-28 laptop:w-1/2 m-auto">
             <Title subcontent={'Let us tell you'} colorsub={'undangan-100'} content={'Our Story'} color={'undangan-100'}/>
-                <div className="my-10">
+                <div className="my-10 p-5">
                     <div className="mb-16">
                         <ContainerWSquare animation={'animate-fadeInRight'}>
                             <ContainerStory image={story1} title={'Perkenalan'} date={'2003 —'} morestyle={'text-right laptop:text-center'}/>
@@ -49,29 +52,39 @@ export default function Page5(){
                             <ContainerStory image={story3} title={'Berkomitmen'} date={'2023 —'} morestyle={'text-right laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
-                    <div className="mb-16">
+                    <div>
                         <ContainerWSquare animation={'animate-fadeInLeft'}>
                             <ContainerStory image={story4} title={'Satu Tuju'} date={'— 2024'} morestyle={'text-left laptop:text-center'}/>
                         </ContainerWSquare>
                     </div>
             </div>
             <div>
-                <div className="text-undangan-100 text-center">
+                <div className="text-undangan-100 text-center p-5">
                     <p className="text-xs laptop:text-base desktop:text-xl">Menikah bukan soal cepat atau lambat. Namun, siapa yang siap mengemban amanah yang besar. Kami berharap kebahagiaan ini dapat menjadi awal dari cerita yang lebih indah, penuh cinta dan doa.</p>
                 </div>
                 <div className="my-16">
-                <video className="w-full rounded-lg" muted controls autoPlay loop>
-                    <source src={video} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                    <div className="flex flex-wrap my-10 justify-center">
-                    {images.map((img, index) => <img className="w-1/3 m-3 rounded-xl duration-300 cursor-pointer hover:grayscale hover:scale-110 laptop:w-1/4" key={index} src={img} onClick={() => openModal(index)}></img>)}
-                    {isModalOpen && (
-                        <div>
-                            <ImageCarousel setshow={setIsModalOpen} images={images} initialIndex={selectedImageIndex} setCurrentIndex={setSelectedImageIndex} />
-                        </div>
-                    )}
-                    </div>
+                    <Swiper
+                    slidesPerView={1.5}
+                    centeredSlides={true}
+                    spaceBetween={10}
+                    loop={true}
+                    grabCursor={true}
+                    modules={[Autoplay]}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    className="mySwiper"
+                    >
+                        <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img4} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img5} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img6} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img7} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={img8} alt="" /></SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </div>
